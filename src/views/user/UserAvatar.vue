@@ -1,7 +1,6 @@
 <script setup>
 import { Plus, Upload } from '@element-plus/icons-vue'
 import {ref} from 'vue'
-import avatar from '@/assets/default.png'
 const uploadRef = ref()
 import {useTokenStore} from '@/stores/token.js'
 const tokenStore = useTokenStore();
