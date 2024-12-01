@@ -9,7 +9,6 @@ import {
     SwitchButton,
     CaretBottom
 } from '@element-plus/icons-vue'
-import avatar from '@/assets/default.png'
 
 import {userInfoService} from '@/api/user.js'
 import useUserInfoStore from '@/stores/userInfo.js'
@@ -160,11 +159,6 @@ const handleCommand = (command)=>{
 
     .el-aside {
         background-color: #232323;
-
-        &__logo {
-            height: 120px;
-            background: url('@/assets/logo.png') no-repeat center / 120px auto;
-        }
 
         .el-menu {
             border-right: none;
