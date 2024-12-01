@@ -165,7 +165,8 @@ const showProductDetails = (row) => {
                 <p><strong>商品ID：</strong>{{ selectedProduct.id }}</p>
                 <p><strong>商品名称：</strong>{{ selectedProduct.name }}</p>
                 <p><strong>商品标题：</strong>{{ selectedProduct.title }}</p>
-                <p><strong>商品图片：</strong><img :src="selectedProduct.img" alt="商品图片" style="width: 100px; height: 100px;"></p>
+                <img v-if="imgUrl" :src="selectedProduct.img" class="avatar" />
+                <img v-else src="@/assets/product_example.jpg" width="278" />
                 <p><strong>商品详情：</strong>{{ selectedProduct.detail }}</p>
                 <p><strong>商品价格：</strong>{{ selectedProduct.price }}</p>
                 <p><strong>商品库存：</strong>{{ selectedProduct.stock }}</p>
